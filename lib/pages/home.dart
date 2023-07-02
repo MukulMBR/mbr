@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:mbr/pages/game.dart';
 import '../login/login.dart';
 import 'profile.dart';
 import 'setting.dart';
@@ -62,6 +63,16 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ProfilePage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Games'),
+              leading: Icon(Icons.games),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GamePage()),
                 );
               },
             ),
