@@ -79,6 +79,11 @@ flutter:
   - res/snake.jpg
   - res/ludo.jpg
   - res/chess.jpg
+  - res/number.jpg
+  - res/hangman.jpg
+  - res/memory.jpg
+  - res/Simon.jpg
+  - res/sudoko.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

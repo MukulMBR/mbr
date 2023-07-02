@@ -148,6 +148,7 @@ class _LoginPageState extends State<LoginPage> {
                               borderRadius:
                               BorderRadius.all(Radius.circular(10)),
                             ),
+                            prefixIcon: Icon(Icons.email, size: 24),
                           ),
                         ),
                         TextField(

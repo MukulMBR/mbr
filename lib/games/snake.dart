@@ -97,7 +97,7 @@ class _SnakeGamePageState extends State<SnakeGamePage> {
             TextButton(
               child: Text('No'),
               onPressed: () {
-                SystemNavigator.pop();
+                Navigator.pop(context);
               },
             ),
             TextButton(

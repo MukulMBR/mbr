@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mbr/games/tictactoe.dart';
+import '../games/Hangman.dart';
 import '../games/chess.dart';
+import '../games/guessthenumber.dart';
+import '../games/memory.dart';
+import '../games/pong.dart';
+import '../games/simon.dart';
 import '../games/snake.dart';
 import '../games/tap.dart';
 
@@ -35,6 +40,14 @@ class GamePage extends StatelessWidget {
                       'Tap',
                     ),
                   ),
+                  Expanded(
+                    child: buildGameButton(
+                      context,
+                      GuessTheNumberScreen(),
+                      'res/number.jpg',
+                      'Guess a Number',
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
@@ -55,6 +68,43 @@ class GamePage extends StatelessWidget {
                       MyHomePage(),
                       'res/chess.jpg',
                       'Chess',
+                    ),
+                  ),
+                  Expanded(
+                    child: buildGameButton(
+                      context,
+                      HangmanScreen(),
+                      'res/hangman.jpg',
+                      'Guess the word',
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: buildGameButton(
+                      context,
+                      MemoryGameScreen(),
+                      'res/memory.jpg',
+                      'Memory game',
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Expanded(
+                    child: buildGameButton(
+                      context,
+                      SimonSaysScreen(),
+                      'res/Simon.jpg',
+                      'Simon Says',
+                    ),
+                  ),
+                  Expanded(
+                    child: buildGameButton(
+                      context,
+                      SudokuGameScreen(),
+                      'res/sudoko.jpg',
+                      'Sudoko',
                     ),
                   ),
                 ],
