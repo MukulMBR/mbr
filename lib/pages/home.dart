@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:mbr/pages/game.dart';
 import '../login/login.dart';
 import 'profile.dart';
+import 'qr_code.dart';
 import 'setting.dart';
 
 class HomePage extends StatelessWidget {
@@ -77,6 +78,16 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
+              title: Text('Qr code'),
+              leading: Icon(Icons.qr_code),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => QrCode()),
+                );
+              },
+            ),
+            ListTile(
               title: Text('Logout'),
               leading: Icon(Icons.logout),
               onTap: () async {
@@ -86,6 +97,7 @@ class HomePage extends StatelessWidget {
                 });
               },
             ),
+            
           ],
         ),
       ),

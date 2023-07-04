@@ -36,7 +36,7 @@ class ProfilePage extends StatelessWidget {
                 // Name and Photo Section
                 Container(
                   height: MediaQuery.of(context).size.height / 3,
-                  child: const Row(
+                  child:  Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(

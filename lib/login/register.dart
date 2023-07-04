@@ -160,7 +160,7 @@ class UserRegister extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               color: blue,
-                              child: const Row(
+                              child:  Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(

@@ -243,7 +243,7 @@ class _LoginPageState extends State<LoginPage> {
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       color: blue,
-                                      child: const Row(
+                                      child:  Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           Padding(

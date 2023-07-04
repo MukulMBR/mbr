@@ -70,14 +70,6 @@ class GamePage extends StatelessWidget {
                       'Chess',
                     ),
                   ),
-                  Expanded(
-                    child: buildGameButton(
-                      context,
-                      HangmanScreen(),
-                      'res/hangman.jpg',
-                      'Guess the word',
-                    ),
-                  ),
                 ],
               ),
               Row(
@@ -99,7 +91,10 @@ class GamePage extends StatelessWidget {
                       'Simon Says',
                     ),
                   ),
-                  Expanded(
+                ],
+              ),
+              Row(children: [
+                Expanded(
                     child: buildGameButton(
                       context,
                       SudokuGameScreen(),
@@ -107,8 +102,16 @@ class GamePage extends StatelessWidget {
                       'Sudoko',
                     ),
                   ),
-                ],
-              ),
+                  SizedBox(width: 10),
+                  Expanded(
+                    child: buildGameButton(
+                      context,
+                      HangmanScreen(),
+                      'res/hangman.jpg',
+                      'Guess the word',
+                    ),
+                  ),
+              ],)
             ],
           ),
         ),

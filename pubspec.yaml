@@ -45,6 +45,9 @@ dependencies:
   url_launcher: ^6.1.11
   package_info_plus: ^4.0.2
   flutter_chess_board: ^1.0.1
+  qr_flutter: ^4.0.0
+  
+  
 
 dev_dependencies:
   flutter_test:
